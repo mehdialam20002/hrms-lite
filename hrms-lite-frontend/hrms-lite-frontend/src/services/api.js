@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://hrms-lite-backendd.onrender.com/api/v1",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
+
 
 export default api;
